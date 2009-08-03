@@ -12,7 +12,14 @@ Gem::Specification.new do |s|
     "README.markdown"
   ]
   s.files = [
-    "VERSION"
+    "README.markdown",
+     "VERSION",
+     "lib/verhoeff.rb",
+     "lib/verhoeff/verhoeff.rb",
+     "rakefile",
+     "test/checksum_test.rb",
+     "test/test_helper.rb",
+     "verhoeff.gemspec"
   ]
   s.homepage = %q{http://github.com/bai/verhoeff}
   s.rdoc_options = ["--charset=UTF-8"]
