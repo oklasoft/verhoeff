@@ -1,0 +1,32 @@
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
+
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/lib'
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "verhoeff"
+    gemspec.summary = "Pure-Ruby implementation of the Verhoeff checksum algorithm."
+    gemspec.email = "beawesomeinstead@yahoo.com"
+    gemspec.homepage = "http://github.com/bai/verhoeff"
+    gemspec.authors = ["beawesomeinstead"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+end
+
+Rake::TestTask.new do |t|
+  t.libs << 'lib'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = false
+end
+
+Rake::RDocTask.new do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = 'Jeweler'
+  rdoc.options << '--line-numbers' << '--inline-source'
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
