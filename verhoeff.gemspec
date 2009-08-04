@@ -2,17 +2,19 @@
 
 Gem::Specification.new do |s|
   s.name = %q{verhoeff}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["beawesomeinstead"]
-  s.date = %q{2009-08-03}
+  s.date = %q{2009-08-04}
+  s.description = %q{Pure-Ruby implementation of the Verhoeff checksum algorithm.}
   s.email = %q{beawesomeinstead@yahoo.com}
   s.extra_rdoc_files = [
     "README.markdown"
   ]
   s.files = [
-    "README.markdown",
+    ".gitignore",
+     "README.markdown",
      "VERSION",
      "lib/verhoeff.rb",
      "lib/verhoeff/verhoeff.rb",
