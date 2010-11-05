@@ -7,9 +7,9 @@ begin
     gem.name = "verhoeff"
     gem.summary = %Q{Pure-Ruby implementation of the Verhoeff checksum algorithm.}
     gem.description = %Q{Pure-Ruby implementation of the Verhoeff checksum algorithm.}
-    gem.email = "beawesomeinstead@yahoo.com"
-    gem.homepage = "http://github.com/bai/verhoeff"
-    gem.authors = ["beawesomeinstead"]
+    gem.email = "oklasoft@lupus.omrf.org"
+    gem.homepage = "http://github.com/oklasoft/verhoeff"
+    gem.authors = ["beawesomeinstead","oklasoft"]
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
