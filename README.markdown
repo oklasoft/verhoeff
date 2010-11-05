@@ -1,4 +1,4 @@
-This is pure Ruby implementation of the Verchoeff algorithm.
+This is pure Ruby (1.9 compatible) implementation of the Verchoeff algorithm.
 
 ### Trivia
 The Verhoeff algorithm uses the properties of D5 (the dihedral group of order 10) — a non-commutative system of operations on ten elements, corresponding to the results of rotating or reflecting (flipping) a regular pentagon.
