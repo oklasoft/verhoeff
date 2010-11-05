@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/test_helper'
+require 'test_helper'
 
 class ChecksumTest < Test::Unit::TestCase
   context "The Verhoeff checksum algorithm" do
