@@ -26,10 +26,12 @@ module Verhoeff
   ]
 
   INV = [0, 4, 3, 2, 1, 5, 6, 7, 8, 9]
+  
+  ZERO_ORDINAL = '0'.each_byte.first
 
   def self.checksum_digit_of(arg)
-    INV[arg.to_s.split("").reverse.enum_for(:each_with_index).inject(0) { |check,(x,i)|
-      D[check][P[i.next % 8][x[0] - ?0]]
+    INV[arg.to_s.each_byte.reverse_each.enum_for(:each_with_index).inject(0) { |check,(x,i)|
+      D[check][P[i.next % 8][x - ZERO_ORDINAL]]
     }]
   end
 
@@ -38,6 +40,6 @@ module Verhoeff
   end
 
   def self.valid?(num)
-    checksum_digit_of(num.to_s[0..-2]) == num.to_s[-1] - ?0
+    checksum_digit_of(num.to_s[0..-2]) == num.to_s.each_byte.reverse_each.next - ZERO_ORDINAL
   end
 end
