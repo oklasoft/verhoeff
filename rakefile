@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "verhoeff"
+    gem.name = "oklasoft-verhoeff"
     gem.summary = %Q{Pure-Ruby implementation of the Verhoeff checksum algorithm.}
     gem.description = %Q{Pure-Ruby implementation of the Verhoeff checksum algorithm.}
     gem.email = "oklasoft@lupus.omrf.org"
